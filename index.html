@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Gerador de Assinatura</h1>
+    </header>
+
+    <div class="form-group">
+      <label for="signature-input">Digite sua Assinatura:</label>
+      <input type="text" id="signature-input" placeholder="Escreva aqui...">
+    </div>
+    
+    <div class="form-group">
+      <label for="font-select">Escolha a Fonte:</label>
+      <select id="font-select">
+        <option value="fonte1" selected>Fonte 1</option>
+        <option value="fonte2">Fonte 2</option>
+        <option value="fonte3">Fonte 3</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="color-picker">Escolha a Cor:</label>
+      <input type="color" id="color-picker" value="#000000">
+    </div>
+
+    <div class="size-controls">
+      <button id="increase-size">+</button>
+      <button id="decrease-size">-</button>
+    </div>
+
+    <div id="signature-preview-container">
+      <div id="signature-preview" class="signature-preview">Sua assinatura aparecerá aqui...</div>
+      <hr class="signature-line">
+    </div>
+    
+    <button id="download-btn" class="styled-button">Salvar como PNG</button>
+    
+    <footer class="footer">
+      Autor: Vinicius Santos Ribeiro - Curso: Análise e Desenvolvimento de Sistemas - Mackenzie
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

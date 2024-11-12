@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: left;
+    padding: 25px;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 21.6px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  label {
+    display: inline-block;
+    width: 130px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .size-controls {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .size-controls button {
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #signature-preview-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  #signature-preview {
+    font-size: 36px;
+    min-height: 50px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    line-height: 1.2;
+    font-family: 'fonte1'; /* Fonte inicial padrão */
+  }
+  
+  .signature-line {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  
+  .styled-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: transparent;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .styled-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+  }
+    
+  @font-face {
+    font-family: 'fonte1';
+    src: url('fonts/1.ttf');
+  }
+  
+  @font-face {
+    font-family: 'fonte2';
+    src: url('fonts/2.ttf');
+  }
+  
+  @font-face {
+    font-family: 'fonte3';
+    src: url('fonts/3.ttf');
+  }
+  
